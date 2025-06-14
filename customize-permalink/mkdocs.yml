@@ -1,0 +1,19 @@
+site_name: 'Example Site'
+use_directory_urls: false
+
+nav:
+  - index.md
+  - chapter02.md
+  - chapter03.md
+
+markdown_extensions:
+  - attr_list
+  - toc:
+      toc_depth: 2
+      permalink: true
+      # Use the function to generate permalinks supporting Unicode
+      slugify: !!python/name:markdown.extensions.toc.slugify_unicode
+
+theme:
+  name: readthedocs
+  locale: en
