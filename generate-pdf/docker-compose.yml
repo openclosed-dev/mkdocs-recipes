@@ -1,0 +1,21 @@
+services:
+  mkdocs:
+    build:
+      context: .
+      args:
+        - USER_ID=1000
+        - GROUP_ID=1000
+    ports:
+      - '8000:8000'
+    volumes:
+      - type: bind
+        source: './mkdocs.yml'
+        target: '/home/mkdocs/mkdocs.yml'
+        read_only: true
+      - type: bind
+        source: './docs/'
+        target: '/home/mkdocs/docs/'
+        read_only: true
+      - type: bind
+        source: './site/'
+        target: '/home/mkdocs/site/'

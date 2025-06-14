@@ -1,0 +1,21 @@
+site_name: 'Example Book'
+site_author: 'John Smith'
+copyright: 'Copyright © 2025 The original authors'
+use_directory_urls: false
+
+nav:
+  - index.md
+  - chapter02.md
+  - chapter03.md
+
+theme:
+  name: material
+
+extra_css:
+  - css/print.css
+
+plugins:
+  - with-pdf:
+      cover_subtitle: ''
+      toc_level: 2
+      ordered_chapter_level: 2

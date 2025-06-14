@@ -1,0 +1,16 @@
+site_name: 'Example Site'
+use_directory_urls: false
+
+nav:
+  - index.md
+  - chapter02.md
+  - chapter03.md
+
+markdown_extensions:
+  - toc:
+      toc_depth: 2
+      permalink: true
+
+theme:
+  name: readthedocs
+  locale: en
